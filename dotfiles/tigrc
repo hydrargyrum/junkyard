@@ -1,0 +1,6 @@
+set line-graphics = utf-8
+set mailmap = yes
+
+bind main u ?git commit --fixup=%(commit)
+bind main r ?git rebase -i %(commit)
+bind blame B <sh -c "tig blame %(commit)~ -- $(git blame -L %(lineno),%(lineno) -p -- %(file) %(commit) | sed -n '/^filename /{s/filename //;p}')"
