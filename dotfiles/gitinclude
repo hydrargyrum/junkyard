@@ -1,0 +1,35 @@
+# tip to have a shared ~/.gitconfig among multiple users and allow customization
+# (and better than symlinks)
+# put in ~/.gitconfig:
+#
+# [include]
+#     path = /path/to/shared/gitinclude
+
+[color]
+	ui = auto
+
+[color.grep]
+	match = red normal bold
+	filename = magenta
+	lineNumber = green
+	column = green
+	separator = cyan
+
+[alias]
+	co = checkout
+	ri = rebase -i
+	cp = cherry-pick
+	amend = commit --amend
+	fixup = commit --fixup
+
+[merge]
+	summary = true
+	diffstat = true
+
+[rebase]
+	autosquash = true
+	autostash = true
+	missingCommitsCheck = warn
+
+[rerere]
+	enabled = true
