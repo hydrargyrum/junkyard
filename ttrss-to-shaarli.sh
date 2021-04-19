@@ -4,9 +4,10 @@
 get_atom_page () {
 	page=$1
 	offset=$((page * 30))
+	id=${2:--1}
 	curl \
 		-s \
-		"${TTRSS_URL%/}/public.php?op=rss&id=-1&key=$TTRSS_TOKEN&limit=30&offset=$offset"
+		"${TTRSS_URL%/}/public.php?op=rss&id=$id&key=$TTRSS_TOKEN&limit=30&offset=$offset"
 }
 
 atom_extract () {
@@ -16,7 +17,10 @@ atom_extract () {
 		-t \
 		-m //A:entry \
 		-v A:title -n \
-		-v A:link/@href -n
+		-v 'A:link[@rel="alternate"]/@href' -n \
+		| sed \
+			-e 's/\\/&&/g' \
+			-e 's/"/\\"/g'
 }
 
 generate_jwt () {
