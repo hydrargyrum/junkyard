@@ -3,7 +3,7 @@
 # if you use chezmoi, it's easy
 
 TMPDIR=${TMPDIR:-/tmp}
-d=$(mktemp "$TMPDIR/chezmoi-docker.XXXXXX")
+d=$(mktemp -d "$TMPDIR/chezmoi-docker.XXXXXX")
 
 # create a copy of the dotfiles in a temp directory
 chezmoi archive | tar -x -C "$d"
