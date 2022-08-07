@@ -14,6 +14,8 @@ import dateutil.relativedelta
 password = getpass.getpass("Gitlab token? ")
 g = gitlab.Gitlab(private_token=password, url=sys.argv[1])
 
+# cache for avoiding to query the same projects everytime
+projects = {}
 
 events = g.events.list(
     #before=datetime.datetime.now() - dateutil.relativedelta.relativedelta(months=6),
@@ -25,6 +27,12 @@ for event in events:
         print("\n\n")
         print("--------------")
         print(event.attributes["note"]["body"])
+
+        if event.project_id not in projects:
+            projects[event.project_id] = g.projects.get(event.project_id)
+        if projects[event.project_id].attributes["archived"]:
+            print("Can't delete note in archived project")
+            continue
 
         if input("Delete? ") == "y":
             g.http_request(
