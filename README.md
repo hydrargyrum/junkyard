@@ -20,6 +20,7 @@ Assorted collection of random stuff
 - prettytable-unicode.py: for python prettytable lib, how to output unicode tables
 - reminder-am-pm-times.rst: a cheatsheet for the unintuitive AM/PM times
 - requests-get-server-ip-in-response.py: for python requests lib, how to get the server ip address in the Response object
+- sorted_filenames.py: for python, sort filenames "for humans", not merely with ASCII order
 - sorted_list.py: for python, a list data structure whose values are always sorted (if the values are immutable)
 - ttrss-to-shaarli.sh: script to export ttrss starred articles and import them in shaarli
 - unpack-dict-params-to-pydantic.py: for python's pydantic lib, decorator to convert json arguments to objects automatically
