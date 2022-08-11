@@ -1,5 +1,6 @@
 Assorted collection of random stuff
 
+- add-containers-in-hosts-file.sh: add docker container addresses in /etc/hosts, with the container names
 - greasemonkey/round-prices.user.js: in greasemonkey/violentmonkey js, round numeric values on any web page, for example replace "9.99€" to "~10€"
 - greasemonkey/reddit-ignoreusers.user.js: in greasemonkey/violentmonkey js, hide topics created by some (configurable) users
 - howto-do-shellextension-with-qt: an old tutorial on how to implement windows shell extension in qt, for example to overlay icons in explorer.exe
