@@ -1,6 +1,7 @@
 Assorted collection of random stuff
 
 - add-containers-in-hosts-file.sh: add docker container addresses in /etc/hosts, with the container names
+- find-termcap-name.zsh: for zsh, take a key as input, then print the corresponding termcap name
 - greasemonkey/round-prices.user.js: in greasemonkey/violentmonkey js, round numeric values on any web page, for example replace "9.99€" to "~10€"
 - greasemonkey/reddit-ignoreusers.user.js: in greasemonkey/violentmonkey js, hide topics created by some (configurable) users
 - howto-do-shellextension-with-qt: an old tutorial on how to implement windows shell extension in qt, for example to overlay icons in explorer.exe
@@ -19,6 +20,7 @@ Assorted collection of random stuff
 - merge_iterables.py: python function to merge several sorted iterables into a single big sorted iterable, on the fly
 - prettytable-markdown.py: for python prettytable lib, how to output markdown tables
 - prettytable-unicode.py: for python prettytable lib, how to output unicode tables
+- print-all-termcaps.zsh: for zsh, print all termcap names and values (in hex, with `xxd(1)`, for readability)
 - reminder-am-pm-times.rst: a cheatsheet for the unintuitive AM/PM times
 - requests-get-server-ip-in-response.py: for python requests lib, how to get the server ip address in the Response object
 - sorted_filenames.py: for python, sort filenames "for humans", not merely with ASCII order
