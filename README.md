@@ -25,6 +25,7 @@ Assorted collection of random stuff
 - [`requests-get-server-ip-in-response.py`](requests-get-server-ip-in-response.py): for python requests lib, how to get the server ip address in the Response object
 - [`sorted_filenames.py`](sorted_filenames.py): for python, sort filenames "for humans", not merely with ASCII order
 - [`sorted_list.py`](sorted_list.py): for python, a list data structure whose values are always sorted (if the values are immutable)
+- [`sysexits-values.sh`](sysexits-values.sh): for shell, standard `exit(1)` code constants
 - [`ttrss-to-shaarli.sh`](ttrss-to-shaarli.sh): script to export ttrss starred articles and import them in shaarli
 - [`unpack-dict-params-to-pydantic.py`](unpack-dict-params-to-pydantic.py): for python's pydantic lib, decorator to convert json arguments to objects automatically
 - [`zsh-options-status.zsh`](zsh-options-status.zsh): for zsh, show current status of all options (think setopt/unsetopt)
