@@ -35,6 +35,7 @@
 - [`add-containers-in-hosts-file.sh`](sh/add-containers-in-hosts-file.sh): add docker container addresses in /etc/hosts, with the container names
 - [`date-in-email-header-format-rfc2822.sh`](sh/date-in-email-header-format-rfc2822.sh): print date in rfc2822 format (suitable for email headers), also useful for any strftime implementation
 - [`example-chezmoi-conf-in-docker.sh`](sh/example-chezmoi-conf-in-docker.sh): how to export your chezmoi dotfiles and import them easily in a docker container
+- [`remove-all-osx-cache-dirs.sh`](sh/remove-all-osx-cache-dirs.sh): remove all `__MACOSX` cache dirs with locate and xargs
 - [`sysexits-values.sh`](sh/sysexits-values.sh): standard `exit(1)` code constants
 - [`ttrss-to-shaarli.sh`](sh/ttrss-to-shaarli.sh): script to export ttrss starred articles and import them in shaarli
 
@@ -42,6 +43,8 @@
 - [`find-termcap-name.zsh`](zsh/find-termcap-name.zsh): take a key as input, then print the corresponding termcap name
 - [`options-status.zsh`](zsh/options-status.zsh): show current status of all options (think setopt/unsetopt)
 - [`print-all-termcaps.zsh`](zsh/print-all-termcaps.zsh): print all termcap names and values (in hex, with `xxd(1)`, for readability)
+- [`remove-empty-files-with-glob-quals.zsh`](zsh/remove-empty-files-with-glob-quals.zsh): using glob quals (metadata matching), remove empty files
+- [`zmv-rename-files-keeping-their-extension.zsh](zsh/zmv-rename-files-keeping-their-extension.zsh): using zmv, rename files and keeping their extension
 
 
 All content here is licensed under the UNLICENSE. See UNLICENSE file.
