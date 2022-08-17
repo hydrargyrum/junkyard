@@ -19,6 +19,7 @@
 - [`better_sum.py`](python/better_sum.py): improving on python's sum builtin to accept non number types, like lists or timedeltas
 - [`cheap_sqlite_schema_migration.py`](python/cheap_sqlite_schema_migration.py): for python sqlite, cheap snippet of how to performed versioned database migrations (sceham or not)
 - [`gitlab-delete-your-comments.py`](python/gitlab-delete-your-comments.py): delete all of your MR comments on a Gitlab instance
+- [`graphql-queries.py`](python/graphql-queries.py): perform GraphQL queries/mutations
 - [`intervals.py`](python/intervals.py): data structure to hold intervals
 - [`merge-docker-compose-files.py`](python/merge-docker-compose-files.py): merge several docker-compose.yml files together
 - [`merge_iterables.py`](python/merge_iterables.py): python function to merge several sorted iterables into a single big sorted iterable, on the fly
