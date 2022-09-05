@@ -1,6 +1,7 @@
 # Collection of personal random snippets and cheatsheets
 
 ## Text
+- [`borgbackup-samples.md`](text/borgbackup-samples.md): examples of how to use borgbackup
 - [`howto-do-shellextension-with-qt`](text/howto-do-shellextension-with-qt): an old tutorial on how to implement windows shell extension in qt, for example to overlay icons in explorer.exe
 - [`reminder-am-pm-times.rst`](text/reminder-am-pm-times.rst): a cheatsheet for the unintuitive AM/PM times
 - [`reminder-ssh-controlmaster-option.md`](text/reminder-ssh-controlmaster-option.md): reminder for ssh's ControlMaster
