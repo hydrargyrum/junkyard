@@ -20,6 +20,7 @@
 - [`ansi_box.py`](python/ansi_box.py): toy library for drawing stuff with ansi sequences
 - [`better_sum.py`](python/better_sum.py): improving on python's sum builtin to accept non number types, like lists or timedeltas
 - [`cheap_sqlite_schema_migration.py`](python/cheap_sqlite_schema_migration.py): for python sqlite, cheap snippet of how to performed versioned database migrations (sceham or not)
+- [`gfs-backup-rotation-algorithm.py`](python/gfs-backup-rotation-algorithm.py): GFS (Grandfather-father-son) backup rotation scheme
 - [`gitlab-delete-your-comments.py`](python/gitlab-delete-your-comments.py): delete all of your MR comments on a Gitlab instance
 - [`graphql-queries.py`](python/graphql-queries.py): perform GraphQL queries/mutations
 - [`intervals.py`](python/intervals.py): data structure to hold intervals
