@@ -17,6 +17,7 @@
 - [`greasemonkey/reddit-ignoreusers.user.js`](javascript/greasemonkey/reddit-ignoreusers.user.js): in greasemonkey/violentmonkey js, hide topics created by some (configurable) users
 
 ## Python
+- [`always_sorted_list.py`](python/sorted_list.py): a list data structure whose values are always sorted (if the values are immutable)
 - [`ansi_box.py`](python/ansi_box.py): toy library for drawing stuff with ansi sequences
 - [`autoimport-pyqt5.toml`](python/autoimport-pyqt5.toml): [autoimport](https://lyz-code.github.io/autoimport/) config for PyQt5 imports and its [generator script](python/autoimport-pyqt5-config-generator.py)
 - [`better_sum.py`](python/better_sum.py): improving on python's sum builtin to accept non number types, like lists or timedeltas
@@ -24,6 +25,7 @@
 - [`gfs-backup-rotation-algorithm.py`](python/gfs-backup-rotation-algorithm.py): GFS (Grandfather-father-son) backup rotation scheme
 - [`gitlab-delete-your-comments.py`](python/gitlab-delete-your-comments.py): delete all of your MR comments on a Gitlab instance
 - [`graphql-queries.py`](python/graphql-queries.py): perform GraphQL queries/mutations
+- [`human_sorted_filenames.py`](python/sorted_filenames.py): sort filenames "for humans", not merely with ASCII order
 - [`intervals.py`](python/intervals.py): data structure to hold intervals
 - [`merge-docker-compose-files.py`](python/merge-docker-compose-files.py): merge several docker-compose.yml files together
 - [`merge_iterables.py`](python/merge_iterables.py): python function to merge several sorted iterables into a single big sorted iterable, on the fly
@@ -32,8 +34,6 @@
 - [`prettytable-unicode.py`](python/prettytable-unicode.py): for prettytable lib, how to output unicode tables
 - [`pytest-kludgy-parametric-fixtures`](python/pytest-kludgy-parametric-fixtures): for python's pytest, snippet of an alternate way to do parametric fixtures, within different directories
 - [`requests-get-server-ip-in-response.py`](python/requests-get-server-ip-in-response.py): for requests lib, how to get the server ip address in the Response object
-- [`sorted_filenames.py`](python/sorted_filenames.py): sort filenames "for humans", not merely with ASCII order
-- [`sorted_list.py`](python/sorted_list.py): a list data structure whose values are always sorted (if the values are immutable)
 - [`unpack-dict-params-to-pydantic.py`](python/unpack-dict-params-to-pydantic.py): for pydantic lib, decorator to convert json arguments to objects automatically
 
 ## `sh`
