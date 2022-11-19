@@ -49,6 +49,7 @@
 - [`find-termcap-name.zsh`](zsh/find-termcap-name.zsh): take a key as input, then print the corresponding termcap name
 - [`options-status.zsh`](zsh/options-status.zsh): show current status of all options (think setopt/unsetopt)
 - [`print-all-termcaps.zsh`](zsh/print-all-termcaps.zsh): print all termcap names and values (in hex, with `xxd(1)`, for readability)
+- [`print-associative.zsh`](zsh/print-associative.zsh): print keys and values of an associative array zsh variable
 - [`remove-empty-files-with-glob-quals.zsh`](zsh/remove-empty-files-with-glob-quals.zsh): using glob quals (metadata matching), remove empty files
 - [`zmv-rename-files-keeping-their-extension.zsh`](zsh/zmv-rename-files-keeping-their-extension.zsh): using zmv, rename files and keeping their extension
 
