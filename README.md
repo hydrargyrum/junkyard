@@ -50,7 +50,7 @@
 - [`options-status.zsh`](zsh/options-status.zsh): show current status of all options (think setopt/unsetopt)
 - [`print-all-termcaps.zsh`](zsh/print-all-termcaps.zsh): print all termcap names and values (in hex, with `xxd(1)`, for readability)
 - [`remove-empty-files-with-glob-quals.zsh`](zsh/remove-empty-files-with-glob-quals.zsh): using glob quals (metadata matching), remove empty files
-- [`zmv-rename-files-keeping-their-extension.zsh](zsh/zmv-rename-files-keeping-their-extension.zsh): using zmv, rename files and keeping their extension
+- [`zmv-rename-files-keeping-their-extension.zsh`](zsh/zmv-rename-files-keeping-their-extension.zsh): using zmv, rename files and keeping their extension
 
 
 All content here is licensed under the UNLICENSE. See UNLICENSE file.

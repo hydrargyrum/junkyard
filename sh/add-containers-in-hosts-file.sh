@@ -34,7 +34,7 @@ done >> "$tmpf"
 sed -n '/# auto docker stop/,$ p' "$target" >> "$tmpf"
 
 # replace /etc/hosts if `-f` was given
-if [ "${1:-}" = -f ]
+if [ "${1-}" = -f ]
 then
 	cat "$tmpf" > "$target"
 else

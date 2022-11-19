@@ -3,6 +3,8 @@
 # this tool is used to delete your comments (notes in Gitlab parlance)
 # left on merge requests.
 
+# first parameter is the URL of the gitlab instance
+
 import datetime
 import getpass
 import sys
@@ -11,6 +13,7 @@ import gitlab
 import dateutil.relativedelta
 
 
+# personal access token, generated in https://GITLAB_URL/-/profile/personal_access_tokens
 password = getpass.getpass("Gitlab token? ")
 g = gitlab.Gitlab(private_token=password, url=sys.argv[1])
 
@@ -18,6 +21,7 @@ g = gitlab.Gitlab(private_token=password, url=sys.argv[1])
 projects = {}
 
 events = g.events.list(
+    # this is if you want to remove old comments only, not all comments
     #before=datetime.datetime.now() - dateutil.relativedelta.relativedelta(months=6),
     iterator=True,
 )
