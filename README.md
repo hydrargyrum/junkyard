@@ -30,8 +30,6 @@
 - [`merge-docker-compose-files.py`](python/merge-docker-compose-files.py): merge several docker-compose.yml files together
 - [`merge_iterables.py`](python/merge_iterables.py): python function to merge several sorted iterables into a single big sorted iterable, on the fly
 - [`os_walk_no_xdev.py`](python/os_walk_no_xdev.py): wraps os.walk() but doesn't enter mountpoints/other filesystems
-- [`prettytable-markdown.py`](python/prettytable-markdown.py): for prettytable lib, how to output markdown tables
-- [`prettytable-unicode.py`](python/prettytable-unicode.py): for prettytable lib, how to output unicode tables
 - [`pytest-kludgy-parametric-fixtures`](python/pytest-kludgy-parametric-fixtures): for python's pytest, snippet of an alternate way to do parametric fixtures, within different directories
 - [`requests-get-server-ip-in-response.py`](python/requests-get-server-ip-in-response.py): for requests lib, how to get the server ip address in the Response object
 - [`unpack-dict-params-to-pydantic.py`](python/unpack-dict-params-to-pydantic.py): for pydantic lib, decorator to convert json arguments to objects automatically
