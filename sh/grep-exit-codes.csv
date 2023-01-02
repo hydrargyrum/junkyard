@@ -1,0 +1,5 @@
+file,grep foo,grep bar,grep baz,grep -v foo,grep -v bar,grep -v baz
+foo.txt,0,1,1,1,0,0
+bar.txt,1,0,1,0,1,0
+foo-bar.txt,0,0,1,0,0,0
+empty.txt,1,1,1,1,1,1
