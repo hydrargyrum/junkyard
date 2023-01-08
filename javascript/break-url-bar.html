@@ -1,0 +1,24 @@
+<html>
+<script>
+// this page only works when opened over HTTP
+
+var message = 'the url bar is now broken and refreshing will not work';
+var gindex = 0;
+
+function setUrlMessage() {
+	var pindex = Math.abs(gindex);
+	history.pushState({}, '', message.substring(0, pindex));
+}
+
+window.addEventListener('load', function() {
+	window.setInterval(function() {
+		setUrlMessage();
+		gindex++;
+		if (gindex > message.length) {
+			gindex = -gindex;
+		}
+	}, 30);
+	document.querySelector('head').innerHTML = '';
+});
+</script>
+</html>

@@ -13,6 +13,7 @@
 - [`diy-strong-ptr-and-weak-ptr.cpp`](cpp/diy-strong-ptr-and-weak-ptr.cpp): diy implementation of strong and weak pointers
 
 ## Javascript
+- [`break-url-bar.html`](javascript/break-url-bar.html): somehow break URL bar display
 - [`greasemonkey/round-prices.user.js`](javascript/greasemonkey/round-prices.user.js): in greasemonkey/violentmonkey js, round numeric values on any web page, for example replace "9.99€" to "~10€"
 - [`greasemonkey/reddit-ignoreusers.user.js`](javascript/greasemonkey/reddit-ignoreusers.user.js): in greasemonkey/violentmonkey js, hide topics created by some (configurable) users
 
