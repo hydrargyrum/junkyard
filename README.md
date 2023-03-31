@@ -34,6 +34,7 @@
 - [`pytest-kludgy-parametric-fixtures`](python/pytest-kludgy-parametric-fixtures): for python's pytest, snippet of an alternate way to do parametric fixtures, within different directories
 - [`requests-get-server-ip-in-response.py`](python/requests-get-server-ip-in-response.py): for requests lib, how to get the server ip address in the Response object
 - [`unpack-dict-params-to-pydantic.py`](python/unpack-dict-params-to-pydantic.py): for pydantic lib, decorator to convert json arguments to objects automatically
+- [`uuidv7-range.py`](python/uuidv7-range.py): range of UUIDv7 values between 2 timestamps, for example for partitioning
 
 ## `sh`
 - [`add-containers-in-hosts-file.sh`](sh/add-containers-in-hosts-file.sh): add docker container addresses in /etc/hosts, with the container names
