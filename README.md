@@ -39,6 +39,7 @@
 - [`add-containers-in-hosts-file.sh`](sh/add-containers-in-hosts-file.sh): add docker container addresses in /etc/hosts, with the container names
 - [`date-in-email-header-format-rfc2822.sh`](sh/date-in-email-header-format-rfc2822.sh): print date in rfc2822 format (suitable for email headers), also useful for any strftime implementation
 - [`example-chezmoi-conf-in-docker.sh`](sh/example-chezmoi-conf-in-docker.sh): how to export your chezmoi dotfiles and import them easily in a docker container
+- [`examples-of-how-cool-is-sponge.sh`](sh/examples-of-how-cool-is-sponge.sh): examples of how cool is sponge(1)
 - [`find-permissions.sh`](sh/find-permissions.sh): small GNU find(1) snippets for dealing with permissions
 - [`grep-exit-codes.md`](sh/grep-exit-codes.md): what exit code will grep use?
 - [`refresh-topydo-auto-with-entr.sh`](sh/refresh-topydo-auto-with-entr.sh): refresh automatically topydo (todo.txt) display using entr
