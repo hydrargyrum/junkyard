@@ -7,18 +7,24 @@ class E(enum.Enum):
     UPPER = "lower"
 
 
+### repr vs str
+
 print(repr(E.UPPER))
-# <E.UPPER: 'lower'>
+# prints: <E.UPPER: 'lower'>
 
 print(str(E.UPPER))
-# E.UPPER
+# prints: E.UPPER
+
+### promote value to enum
 
 print(repr(E("lower")))
-# <E.UPPER: 'lower'>
+# prints: <E.UPPER: 'lower'>
 
-print(repr(E.members["UPPER"]))
-# <E.UPPER: 'lower'>
+print(repr(E["UPPER"]))
+# prints: <E.UPPER: 'lower'>
 
-E.UPPER.name == 'UPPER'
+### enum entry fields
 
-E.UPPER.value == 'lower'
+assert E.UPPER.name == 'UPPER'
+
+assert E.UPPER.value == 'lower'
