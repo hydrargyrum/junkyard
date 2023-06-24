@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>
+	</title>
+	<style>
+	label {
+		display: block;
+		border: 1px solid black;
+		margin: 1em 2em;
+		padding: 1em 0.5em;
+		background: white;
+	}
+
+	.answer {
+		display: none;
+		border: 0.5em solid lime;
+		margin: 1em 2em;
+		padding: 1em 0.5em;
+	}
+
+	input:checked ~ .answer {
+		display: block;
+	}
+	</style>
+
+</head>
+<body>
+
+You are in the street.
+Are you facing an:
+
+
+
+<label>
+	<input type="radio" name="side" value="even" id="even" />
+	Even number?
+	<br/>
+	<img src="even.png" />
+
+
+	<div class="answer">
+		Street numbers increase on your left:
+		<br/>
+		<img src="even-answer.png" />
+	</div>
+</label>
+
+
+
+<label>
+	<input type="radio" name="side" value="odd" id="odd" />
+	Odd number?
+	<br/>
+	<img src="odd.png" />
+
+
+	<div class="answer">
+		Street numbers increase on your right:
+		<br/>
+		<img src="odd-answer.png" />
+	</div>
+</label>
+
+
+
+
+</body>
+</html>
+
