@@ -14,6 +14,10 @@
 - [`diy-QReadWriteLock.cpp`](cpp/diy-QReadWriteLock.cpp): for qt, diy implementation of qreadwritelock
 - [`diy-strong-ptr-and-weak-ptr.cpp`](cpp/diy-strong-ptr-and-weak-ptr.cpp): diy implementation of strong and weak pointers
 
+## gitlab-ci
+- [`cache-for-debian-based-images.gitlab-ci.yml`](gitlab/cache-for-debian-based-images.gitlab-ci.yml): snippet for caching Debian packages to avoid re-downloading them
+- [`cache-for-python.gitlab-ci.yml`](gitlab/cache-for-python.gitlab-ci.yml): snippet for caching pip packages to avoid re-downloading them
+
 ## Javascript
 - [`break-url-bar.html`](javascript/break-url-bar.html): somehow break URL bar display
 - [`greasemonkey/deliveroo`](javascript/greasemonkey/deliveroo): in greasemonkey/violentmonkey js, various scripts to make deliveroo site a bit less painful

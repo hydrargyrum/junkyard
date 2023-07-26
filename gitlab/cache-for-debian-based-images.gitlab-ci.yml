@@ -1,0 +1,36 @@
+# Every CI job will re-install all debian dependencies.
+# By default, nothing is shared/cached, so it will redownload them
+# everytime, even if nothing changed, which is a waste of bandwidth.
+
+# The goal is to save the downloaded packages in a cached place.
+# So when a version of a package should be installed, the cache is inspected
+# before re-download. It will not freeze a version, it just prevents useless
+# re-downloads of something that was already downloaded and doesn't change.
+# A version of a package does not change.
+
+# Cache the dir where apt-get download packages.
+# It must be under $CI_PROJECT_DIR.
+cache:
+  paths:
+    - "$CI_PROJECT_DIR/.cache/apt"
+
+default:
+  before_script:
+    # The dir must exist, else apt-get fails.
+    - 'mkdir -p "$CI_PROJECT_DIR/.cache/apt/partial"'
+    # This config file instructs apt-get not to keep any download.
+    # It's suitable for building images based on debian, to avoid .deb files
+    # lingering in images layers.
+    # But we're not building an image here, and we DO desire to keep
+    # downloads, so disable this setting.
+    - "rm -f /etc/apt/apt.conf.d/docker-clean"
+    # Tell apt-get to store its downloads in our cached directory.
+    - 'echo "Dir::Cache::Archives \"$CI_PROJECT_DIR/.cache/apt\";" >> /etc/apt/apt.conf'
+
+
+# Sample how to use it. Cache is transparent here.
+lint:
+  image: "debian:stable"
+  script:
+    - "apt update && apt install -y --no-install-recommends shellcheck"
+    - "shellcheck script.sh"

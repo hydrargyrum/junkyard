@@ -1,0 +1,28 @@
+# Every CI job will re-install all pip dependencies.
+# By default, nothing is shared/cached, so it will redownload them
+# everytime, even if nothing changed, which is a waste of bandwidth.
+
+# The goal is to save the downloaded packages in a cached place.
+# So when a version of a package should be installed, the cache is inspected
+# before re-download. It will not freeze a version, it just prevents useless
+# re-downloads of something that was already downloaded and doesn't change.
+# The version of a pip package is not supposed to change.
+
+# Tell pip to cache its downloads in a dir under $CI_PROJECT_DIR, because
+# paths outside $CI_PROJECT_DIR can't be cached.
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+# Basic cache on the download dir.
+cache:
+  paths:
+    - "$CI_PROJECT_DIR/.cache/pip"
+
+
+# Sample how to use it. Starting here, the cache is transparent.
+lint:
+  image: "python:3"
+  script:
+    - "pip install -r requirements.txt"
+    - "pip install -r requirements-dev.txt"
+    - "flake8 my_script.py"
