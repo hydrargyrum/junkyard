@@ -14,6 +14,9 @@
 - [`diy-QReadWriteLock.cpp`](cpp/diy-QReadWriteLock.cpp): for qt, diy implementation of qreadwritelock
 - [`diy-strong-ptr-and-weak-ptr.cpp`](cpp/diy-strong-ptr-and-weak-ptr.cpp): diy implementation of strong and weak pointers
 
+## Config
+- [`todotxt.nanorc`](dotfiles/todotxt.nanorc): [`nano`](https://www.nano-editor.org/) syntax coloring for [`todo.txt` format](http://todotxt.org/)
+
 ## gitlab-ci
 - [`cache-for-debian-based-images.gitlab-ci.yml`](gitlab/cache-for-debian-based-images.gitlab-ci.yml): snippet for caching Debian packages to avoid re-downloading them
 - [`cache-for-python.gitlab-ci.yml`](gitlab/cache-for-python.gitlab-ci.yml): snippet for caching pip packages to avoid re-downloading them

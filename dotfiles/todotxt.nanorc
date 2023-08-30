@@ -1,0 +1,16 @@
+# include "path/to/todotxt.nanorc"
+
+syntax "todo" "todo\.txt$"
+
+# priorities color whole lines so put them first
+# so tags, projects and contexts can override them
+color cyan start="^\(A\)" end="$"
+color yellow start="^\(B\)" end="$"
+color blue start="^\(C\)" end="$"
+
+color red "\+[[:alnum:]]+"
+color magenta "@[[:alnum:]]+"
+color green "[a-z]+:[[:alnum:]]+"
+
+# "done" is last, so mid-line coloring is ignored
+color grey start="^x" end="$"
