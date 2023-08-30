@@ -1,6 +1,13 @@
+# the following commands have sub-commands, and these sub-commands have
+# dedicated manual pages.
+# e.g. git(1) also has manual pages git-commit(1), git-push(1), etc.
+# that's why git is in this list.
+# keep the list sorted.
 - borg
+- bundle
 - caddy
 - cargo
+- containers-storage
 - cryptsetup
 - docker
 - git
@@ -9,3 +16,4 @@
 - notmuch
 - openssl
 - podman
+- runc
