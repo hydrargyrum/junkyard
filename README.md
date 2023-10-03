@@ -7,6 +7,7 @@
 - [`reminder-am-pm-times.rst`](text/reminder-am-pm-times.rst): a cheatsheet for the unintuitive AM/PM times
 - [`reminder-ssh-controlmaster-option.md`](text/reminder-ssh-controlmaster-option.md): reminder for ssh's ControlMaster
 - [`street-numbers/`](text/street-numbers/): find in what direction street number increase by looking at a single number
+- [`xdg-variables-cheatsheet.md`](text/xdg-variables-cheatsheet.md): `XDG_*` variables cheatsheet
 - [`xscreensaver-theme-colors/`](text/xscreensaver-theme-colors/): cheatsheet of theme configuration resources for xscreensaver
 
 ## C++
