@@ -55,6 +55,7 @@
 - [`examples-of-how-cool-is-sponge.sh`](sh/examples-of-how-cool-is-sponge.sh): examples of how cool is sponge(1)
 - [`find-permissions.sh`](sh/find-permissions.sh): small GNU find(1) snippets for dealing with permissions
 - [`grep-exit-codes.md`](sh/grep-exit-codes.md): what exit code will grep use?
+- [`pyproject-snippets.md`](python/pyproject-snippets.md): `pyproject.toml` snippets
 - [`refresh-topydo-auto-with-entr.sh`](sh/refresh-topydo-auto-with-entr.sh): refresh automatically topydo (todo.txt) display using entr
 - [`remove-all-osx-cache-dirs.sh`](sh/remove-all-osx-cache-dirs.sh): remove all `__MACOSX` cache dirs with locate and xargs
 - [`sysexits-values.sh`](sh/sysexits-values.sh): standard `exit(1)` code constants
