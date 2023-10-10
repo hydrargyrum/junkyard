@@ -26,4 +26,9 @@ zsh-options-status () {
 	} | sort
 }
 
+# alternate implementation:
+# zsh-options-status () {
+# 	printf "%s: %s\n" ${(kv)options} | sort
+# }
+
 zsh-options-status
