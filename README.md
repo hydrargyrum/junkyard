@@ -44,6 +44,7 @@
 - [`merge_iterables.py`](python/merge_iterables.py): python function to merge several sorted iterables into a single big sorted iterable, on the fly
 - [`os_walk_no_xdev.py`](python/os_walk_no_xdev.py): wraps os.walk() but doesn't enter mountpoints/other filesystems
 - [`pytest-kludgy-parametric-fixtures`](python/pytest-kludgy-parametric-fixtures): for python's pytest, snippet of an alternate way to do parametric fixtures, within different directories
+- [`re-empty-none.py`](python/re-empty-none.py): the "re" module can sometimes return matches with empty values or None
 - [`requests-get-server-ip-in-response.py`](python/requests-get-server-ip-in-response.py): for requests lib, how to get the server ip address in the Response object
 - [`unpack-dict-params-to-pydantic.py`](python/unpack-dict-params-to-pydantic.py): for pydantic lib, decorator to convert json arguments to objects automatically
 - [`uuidv7-range.py`](python/uuidv7-range.py): range of UUIDv7 values between 2 timestamps, for example for partitioning
