@@ -44,6 +44,7 @@
 - [`merge-docker-compose-files.py`](python/merge-docker-compose-files.py): merge several docker-compose.yml files together
 - [`merge_iterables.py`](python/merge_iterables.py): python function to merge several sorted iterables into a single big sorted iterable, on the fly
 - [`os_walk_no_xdev.py`](python/os_walk_no_xdev.py): wraps os.walk() but doesn't enter mountpoints/other filesystems
+- [`pyproject-snippets.md`](python/pyproject-snippets.md): `pyproject.toml` snippets
 - [`pytest-kludgy-parametric-fixtures`](python/pytest-kludgy-parametric-fixtures): for python's pytest, snippet of an alternate way to do parametric fixtures, within different directories
 - [`re-empty-none.py`](python/re-empty-none.py): the "re" module can sometimes return matches with empty values or None
 - [`requests-get-server-ip-in-response.py`](python/requests-get-server-ip-in-response.py): for requests lib, how to get the server ip address in the Response object
@@ -57,7 +58,6 @@
 - [`examples-of-how-cool-is-sponge.sh`](sh/examples-of-how-cool-is-sponge.sh): examples of how cool is sponge(1)
 - [`find-permissions.sh`](sh/find-permissions.sh): small GNU find(1) snippets for dealing with permissions
 - [`grep-exit-codes.md`](sh/grep-exit-codes.md): what exit code will grep use?
-- [`pyproject-snippets.md`](python/pyproject-snippets.md): `pyproject.toml` snippets
 - [`refresh-topydo-auto-with-entr.sh`](sh/refresh-topydo-auto-with-entr.sh): refresh automatically topydo (todo.txt) display using entr
 - [`remove-all-osx-cache-dirs.sh`](sh/remove-all-osx-cache-dirs.sh): remove all `__MACOSX` cache dirs with locate and xargs
 - [`sysexits-values.sh`](sh/sysexits-values.sh): standard `exit(1)` code constants
