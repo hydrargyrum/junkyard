@@ -1,4 +1,6 @@
-// diagram showing `collections.abc` classes with abstract methods and mixins
+# diagram showing `collections.abc` classes with abstract methods and mixins
+
+```mermaid
 classDiagram
     Container <|-- Sequence
     Iterable <|-- Iterator
@@ -131,3 +133,6 @@ classDiagram
         + update(*, **)
         + setdefault(item, value)
     }
+```
+
+Uses [Mermaid](https://mermaid.js.org/) for rendering
