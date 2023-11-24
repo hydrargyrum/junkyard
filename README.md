@@ -34,6 +34,7 @@
 - [`autoimport-pyqt5.toml`](python/autoimport-pyqt5.toml): [autoimport](https://lyz-code.github.io/autoimport/) config for PyQt5 imports and its [generator script](python/autoimport-pyqt5-config-generator.py)
 - [`better_sum.py`](python/better_sum.py): improving on python's sum builtin to accept non number types, like lists or timedeltas
 - [`cheap_sqlite_schema_migration.py`](python/cheap_sqlite_schema_migration.py): for python sqlite, cheap snippet of how to performed versioned database migrations (sceham or not)
+- [`collections-abc-classes.mermaid`](python/collections-abc-classes.mermaid): diagram showing `collections.abc` classes with abstract methods and mixins
 - [`enum-reminder.py`](python/enum-reminder.py): reminder on enums
 - [`gfs-backup-rotation-algorithm.py`](python/gfs-backup-rotation-algorithm.py): GFS (Grandfather-father-son) backup rotation scheme
 - [`gitlab-delete-your-comments.py`](python/gitlab-delete-your-comments.py): delete all of your MR comments on a Gitlab instance
