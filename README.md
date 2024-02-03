@@ -64,6 +64,7 @@
 - [`remove-all-osx-cache-dirs.sh`](sh/remove-all-osx-cache-dirs.sh): remove all `__MACOSX` cache dirs with locate and xargs
 - [`sysexits-values.sh`](sh/sysexits-values.sh): standard `exit(1)` code constants
 - [`ttrss-to-shaarli.sh`](sh/ttrss-to-shaarli.sh): script to export ttrss starred articles and import them in [Shaarli](https://github.com/shaarli/Shaarli)
+- [`xclip-or-xsel.sh`](sh/xclip-or-xsel.sh): mini-cheatsheet to [`xclip`](https://github.com/astrand/xclip) and [`xsel`](https://github.com/kfish/xsel) (manipulate X11 clipboard from command-line)
 
 ## `zsh`
 - [`find-termcap-name.zsh`](zsh/find-termcap-name.zsh): take a key as input, then print the corresponding termcap name
