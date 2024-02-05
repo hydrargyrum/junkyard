@@ -1,12 +1,14 @@
 # Collection of personal random snippets and cheatsheets
 
+## Non-tech
+- [`reminder-am-pm-times.rst`](text/reminder-am-pm-times.rst): a cheatsheet for the unintuitive AM/PM times
+- [`street-numbers/`](text/street-numbers/): find in what direction street number increase by looking at a single number
+
 ## Text
 - [`borgbackup-samples.md`](text/borgbackup-samples.md): examples of how to use [borgbackup](https://www.borgbackup.org/)
 - [`commands-with-sub-manual-pages.yml`](commands-with-sub-manual-pages.yml): commands which have dedicated sub manual pages for subcommands
 - [`howto-do-shellextension-with-qt`](text/howto-do-shellextension-with-qt): an old tutorial on how to implement windows shell extension in qt, for example to overlay icons in `explorer.exe`
-- [`reminder-am-pm-times.rst`](text/reminder-am-pm-times.rst): a cheatsheet for the unintuitive AM/PM times
 - [`reminder-ssh-controlmaster-option.md`](text/reminder-ssh-controlmaster-option.md): reminder for ssh's [ControlMaster](https://manpages.debian.org/stable/openssh-client/ssh_config.5.en.html#ControlMaster)
-- [`street-numbers/`](text/street-numbers/): find in what direction street number increase by looking at a single number
 - [`xdg-variables-cheatsheet.md`](text/xdg-variables-cheatsheet.md): [`XDG_*`](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html) variables cheatsheet
 - [`xscreensaver-theme-colors/`](text/xscreensaver-theme-colors/): cheatsheet of theme configuration resources for [xscreensaver](https://www.jwz.org/xscreensaver/)
 

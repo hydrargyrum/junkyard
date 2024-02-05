@@ -13,3 +13,5 @@
 | `$XDG_RUNTIME_DIR` | no default | user | non-essential runtime files | runtime files and other file objects (such as sockets, named pipes, ...). No large files, it might reside in runtime memory. This folder is created by the system, and files in the directory will not survive reboot or a full logout/login cycle. |
 
 Based on [XDG Base Directory Specification 0.8](https://specifications.freedesktop.org/basedir-spec/0.8/)
+
+See also [Archlinux notes](https://wiki.archlinux.org/title/XDG_Base_Directory#User_directories)

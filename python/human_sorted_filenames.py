@@ -34,6 +34,10 @@ def extract_ints(line):
 
 
 def collate_strs(tup):
+    # "collating" is an important step in sorting strings for humans
+    # it ensures letters are treated with the user language rules, not merely
+    # in unicode codepoint order
+    # it considers for example diacritics or lowercase/uppercase
     return tuple(
         (type, part)
         if type == 0
