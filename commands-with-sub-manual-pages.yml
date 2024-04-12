@@ -10,10 +10,13 @@
 - containers-storage
 - cryptsetup
 - docker
+- flatpak
 - git
+- glab
 - go
 - ip
 - notmuch
 - openssl
+- pip3
 - podman
 - runc
