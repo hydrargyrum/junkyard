@@ -38,6 +38,7 @@
 - [`cheap_sqlite_schema_migration.py`](python/cheap_sqlite_schema_migration.py): for python [sqlite](https://docs.python.org/3/library/sqlite3.html), cheap snippet of how to performed versioned database migrations (schema or not)
 - [`collections-abc-classes.md`](python/collections-abc-classes.md): [Mermaid](https://mermaid.js.org/) diagram showing `collections.abc` classes with abstract methods and mixins
 - [`enum-reminder.py`](python/enum-reminder.py): reminder on [enums](https://docs.python.org/3/library/enum.html)
+- [`python/file_mode_to_string_like_ls.py`](python/file_mode_to_string_like_ls.py): convert a `stat()` file mode to a string like `-rwxr-xr-x`
 - [`gfs-backup-rotation-algorithm.py`](python/gfs-backup-rotation-algorithm.py): [GFS (Grandfather-father-son)](https://en.wikipedia.org/wiki/Backup_rotation_scheme#Grandfather-father-son) backup rotation scheme
 - [`gitlab-delete-your-comments.py`](python/gitlab-delete-your-comments.py): delete all of your MR comments on a Gitlab instance
 - [`graphql-queries.py`](python/graphql-queries.py): perform GraphQL queries/mutations
