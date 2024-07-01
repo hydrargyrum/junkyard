@@ -1,3 +1,4 @@
+#!/usr/bin/env pytest
 
 """Always sorted list
 
@@ -5,6 +6,9 @@ Use add() instead of append() or insert().
 """
 
 import bisect
+
+
+__all__ = ("SortedList",)
 
 
 class SortedList(list):

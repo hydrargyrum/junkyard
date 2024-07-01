@@ -26,7 +26,8 @@ def setup_session_for_returning_addr(session):
 
 
 # demo
-session = requests.Session()
-setup_session_for_returning_addr(session)
-response = session.get('https://httpbin.org/get')
-print(response.remote_addr)
+if __name__ == "__main__":
+    session = requests.Session()
+    setup_session_for_returning_addr(session)
+    response = session.get('https://httpbin.org/get')
+    print(response.remote_addr)

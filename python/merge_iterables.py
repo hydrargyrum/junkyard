@@ -1,3 +1,6 @@
+__all__ = ("merge_iterables",)
+
+
 def merge_iterables(*iterables, key=lambda x: x):
     """Take multiple sorted iterables and create a single sorted iterator.
 

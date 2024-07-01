@@ -7,8 +7,12 @@ import operator
 import pytest
 
 
+__all__ = ("better_sum",)
+
+
 # sum() is a pretty dumb function
 def test_sum_is_dumb():
+    assert sum([1, 2, 3]) == 6
     with pytest.raises(TypeError):
         sum(["a", "b", "c"])
     with pytest.raises(TypeError):
@@ -22,6 +26,6 @@ def better_sum(iterable, /):
 
 
 def test_better_sum():
-    assert sum([1, 2, 3]) == 6
+    assert better_sum([1, 2, 3]) == 6
     assert better_sum(["a", "b", "c"]) == "abc"
     assert better_sum([timedelta(1), timedelta(2), timedelta(3)]) == timedelta(6)

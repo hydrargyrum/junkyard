@@ -5,6 +5,9 @@
 import stat
 
 
+__all__ = ("mode_to_string",)
+
+
 MODE_TYPES = {
     stat.S_ISREG: "-",
     stat.S_ISDIR: "d",

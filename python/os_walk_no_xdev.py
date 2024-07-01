@@ -2,6 +2,9 @@
 import os
 
 
+__all__ = ("walk_no_xdev",)
+
+
 def walk_no_xdev(top, onerror=None, followlinks=False):
     """Wraps os.walk() but doesn't enter mountpoints/other filesystems.
 
