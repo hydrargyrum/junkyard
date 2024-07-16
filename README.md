@@ -49,6 +49,7 @@
 - [`os_walk_no_xdev.py`](python/os_walk_no_xdev.py): wraps `os.walk()` but doesn't enter mountpoints/other filesystems
 - [`pyproject-snippets.md`](python/pyproject-snippets.md): `pyproject.toml` snippets
 - [`pytest-kludgy-parametric-fixtures`](python/pytest-kludgy-parametric-fixtures): for python's [pytest](https://docs.pytest.org/), snippet of an alternate way to do parametric fixtures, within different directories
+- [`read_lines_split_on_terminator.py`](python/read_lines_split_on_terminator.py): like `file.readlines()` but accepts an arbitrary delimiter
 - [`re-empty-none.py`](python/re-empty-none.py): the [`re`](https://docs.python.org/3/library/re.html) module can sometimes return matches with empty values or None
 - [`requests-get-server-ip-in-response.py`](python/requests-get-server-ip-in-response.py): for [requests](https://pypi.org/project/requests/) lib, how to get the server ip address in the Response object
 - [`unpack-dict-params-to-pydantic.py`](python/unpack-dict-params-to-pydantic.py): for [pydantic](https://pypi.org/project/pydantic/) lib, decorator to convert json arguments to objects automatically
