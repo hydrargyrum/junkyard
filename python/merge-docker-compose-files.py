@@ -54,30 +54,30 @@ def replace_yaml(composein):
 
 
 cwd = Path.cwd().resolve()
-stack = ExitStack()
+
 outs = []
+with ExitStack() as stack:
+    for composein in sys.argv[1:]:
+        composein = Path(composein).resolve()
 
-for composein in sys.argv[1:]:
-    composein = Path(composein).resolve()
+        content = replace_yaml(composein)
 
-    content = replace_yaml(composein)
-
-    # NamedTemporaryFile is normally used as a context manager.
-    # But we can't stack an undefined number of context managers
-    # so ExitStack comes to the rescue.
-    temp = stack.enter_context(
-        NamedTemporaryFile(
-            dir=composein.parent, prefix=".compose.", suffix=".yml",
+        # NamedTemporaryFile is normally used as a context manager.
+        # But we can't stack an undefined number of context managers
+        # so ExitStack comes to the rescue.
+        temp = stack.enter_context(
+            NamedTemporaryFile(
+                dir=composein.parent, prefix=".compose.", suffix=".yml",
+            )
         )
+        outs.append(Path(temp.name))
+        outs[-1].write_text(content)
+
+    # `docker-compose config` combines files (and expands vars etc.)
+    combined = check_output(
+        ["docker-compose", *(f"--file={out}" for out in outs), "config"],
+        encoding="utf-8"
     )
-    outs.append(Path(temp.name))
-    outs[-1].write_text(content)
 
-
-# `docker-compose config` combines files (and expands vars etc.)
-combined = check_output(
-    ["docker-compose", *(f"--file={out}" for out in outs), "config"],
-    encoding="utf-8"
-)
 # finally write output file
 Path("combined-docker-compose.yml").write_text(combined)
