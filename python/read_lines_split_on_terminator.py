@@ -7,6 +7,9 @@ import io
 import pytest
 
 
+__all__ = ("iter_lines",)
+
+
 def iter_lines(fp, delimiter=b"\n", *, bufsize=1024):
     """Reads lines from `fp` separated by `delimiter` and yield them"""
     if not isinstance(delimiter, (bytes, str)):
