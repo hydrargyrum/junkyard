@@ -66,6 +66,7 @@
 - [`interactive-topydo-with-fzf.sh`](sh/interactive-topydo-with-fzf.sh): create an interactive UI for [topydo](https://github.com/topydo/topydo) with [fzf](https://github.com/junegunn/fzf)
 - [`rdfind-resultstxt-coloring.sh`](sh/rdfind-resultstxt-coloring.sh): view [rdfind](https://rdfind.pauldreik.se/)'s results.txt, demonstrating coloring without hardcoded sequences, hyperlinks
 - [`refresh-topydo-auto-with-entr.sh`](sh/refresh-topydo-auto-with-entr.sh): refresh automatically [topydo](https://github.com/topydo/topydo) (todo.txt) display using entr
+- [`reminder-fzf-placeholders.md`](sh/reminder-fzf-placeholders.md): reminder on [fzf](https://github.com/junegunn/fzf) `{placeholders}`
 - [`remove-all-osx-cache-dirs.sh`](sh/remove-all-osx-cache-dirs.sh): remove all `__MACOSX` cache dirs with locate and xargs
 - [`sysexits-values.sh`](sh/sysexits-values.sh): standard `exit(1)` code constants
 - [`ttrss-to-shaarli.sh`](sh/ttrss-to-shaarli.sh): script to export ttrss starred articles and import them in [Shaarli](https://github.com/shaarli/Shaarli)
