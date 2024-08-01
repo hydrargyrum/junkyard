@@ -1,5 +1,5 @@
 In this tutorial, we will make a windows shell extension using Qt and visualstudio express. This extension will add some overlay icons to files in the file explorer. Files whose names contain a 'q' or a 't' will have their icon modified.
-[screenshot1.PNG]
+[screenshot1.png]
 Note: perhaps visualstudio express is not even needed, perhaps only some free windows SDK. What is needed from it is its "midl" tool since there is no opensource alternative yet.
 Disclaimer: this tutorial is a work in progress.
 
@@ -291,4 +291,4 @@ Test
 
 Now, we can start notepad (or any app with a file selection dialog), select "open..." and watch our shell extension at work!
 
-[screenshot2.PNG]
+[screenshot2.png]
