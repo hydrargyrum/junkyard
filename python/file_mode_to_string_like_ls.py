@@ -3,6 +3,7 @@
 # convert a `stat()` file mode to a string like "-rwxr-xr-x"
 
 import stat
+import sys
 
 
 __all__ = ("mode_to_string",)
@@ -65,3 +66,11 @@ def test_mode_to_string():
     assert mode_to_string(0o100653) == "-rw-r-x-wx"
     assert mode_to_string(0o047000) == "d--S--S--T"
     assert mode_to_string(0o017111) == "p--s--s--t"
+
+
+if __name__ == "__main__":
+    try:
+        as_int = int(sys.argv[1])
+    except (IndexError, ValueError):
+        sys.exit(f"error: correct usage is: {sys.argv[0]} NUMBER")
+    print(mode_to_string(as_int))
