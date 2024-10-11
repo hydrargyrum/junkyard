@@ -7,7 +7,6 @@
 ## Text
 - [`borgbackup-samples.md`](text/borgbackup-samples.md): examples of how to use [borgbackup](https://www.borgbackup.org/)
 - [`commands-with-sub-manual-pages.yml`](commands-with-sub-manual-pages.yml): commands which have dedicated sub manual pages for subcommands
-- [`howto-do-shellextension-with-qt`](text/howto-do-shellextension-with-qt): an old tutorial on how to implement windows shell extension in qt, for example to overlay icons in `explorer.exe`
 - [`reminder-ssh-controlmaster-option.md`](text/reminder-ssh-controlmaster-option.md): reminder for ssh's [ControlMaster](https://manpages.debian.org/stable/openssh-client/ssh_config.5.en.html#ControlMaster)
 - [`xdg-variables-cheatsheet.md`](text/xdg-variables-cheatsheet.md): [`XDG_*`](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html) variables cheatsheet
 - [`xscreensaver-theme-colors/`](text/xscreensaver-theme-colors/): cheatsheet of theme configuration resources for [xscreensaver](https://www.jwz.org/xscreensaver/)
@@ -16,6 +15,7 @@
 - [`asciitree.cpp`](cpp/asciitree.cpp): C++ example to hardcode tree structures that look like trees in source
 - [`diy-QReadWriteLock.cpp`](cpp/diy-QReadWriteLock.cpp): for qt, DIY implementation of qreadwritelock
 - [`diy-strong-ptr-and-weak-ptr.cpp`](cpp/diy-strong-ptr-and-weak-ptr.cpp): DIY implementation of strong and weak pointers
+- [`howto-do-shellextension-with-qt`](cpp/howto-do-shellextension-with-qt): an old tutorial on how to implement windows shell extension in qt, for example to overlay icons in `explorer.exe`
 
 ## Config
 - [`todotxt.nanorc`](dotfiles/todotxt.nanorc): [`nano`](https://www.nano-editor.org/) syntax coloring for [`todo.txt` format](http://todotxt.org/)
