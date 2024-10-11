@@ -119,6 +119,12 @@ esac
 
 while read duptype id depth size device inode priority name
 do
+	target=$name
+	if [ "$name" = "${name#/}" ]
+	then
+		target="$dir/$name"
+	fi
+
 	case "$duptype" in
 		"#")
 			continue
@@ -126,12 +132,12 @@ do
 
 		DUPTYPE_FIRST_OCCURRENCE)
 			echo "$(color green)$duptype $(humansize $size)" \
-				"$(hyperlink "$dir/$name" "$name")$(resetcolor)"
+				"$(hyperlink "$target" "$name")$(resetcolor)"
 			;;
 
 		DUPTYPE_OUTSIDE_TREE|DUPTYPE_WITHIN_SAME_TREE)
 			echo "    $(color red)$duptype $(humansize $size)" \
-				"$(hyperlink "$dir/$name" "$name")$(resetcolor)"
+				"$(hyperlink "$target" "$name")$(resetcolor)"
 			;;
 	esac
 done
