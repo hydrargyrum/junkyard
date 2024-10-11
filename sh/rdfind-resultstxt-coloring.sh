@@ -102,7 +102,7 @@ dir=$PWD
 case $# in
 	0) ;;
 	1)
-		if [ "$1" = -h ] || [ "$1" == --help ]
+		if [ "$1" = -h ] || [ "$1" = --help ]
 		then
 			usage
 			exit 0
