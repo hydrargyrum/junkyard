@@ -7,6 +7,7 @@
 ## Text
 - [`borgbackup-samples.md`](text/borgbackup-samples.md): examples of how to use [borgbackup](https://www.borgbackup.org/)
 - [`commands-with-sub-manual-pages.yml`](commands-with-sub-manual-pages.yml): commands which have dedicated sub manual pages for subcommands
+- [`go-templates-blank-spaces-trimming.html`](text/go-templates-blank-spaces-trimming.html): visual reminder about go templates' blank spaces trimming
 - [`reminder-ssh-controlmaster-option.md`](text/reminder-ssh-controlmaster-option.md): reminder for ssh's [ControlMaster](https://manpages.debian.org/stable/openssh-client/ssh_config.5.en.html#ControlMaster)
 - [`xdg-variables-cheatsheet.md`](text/xdg-variables-cheatsheet.md): [`XDG_*`](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html) variables cheatsheet
 - [`xscreensaver-theme-colors/`](text/xscreensaver-theme-colors/): cheatsheet of theme configuration resources for [xscreensaver](https://www.jwz.org/xscreensaver/)

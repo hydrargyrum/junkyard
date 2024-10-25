@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noai, noimageai" />
+<title>XScreenSaver theming resources names</title>
+<style>
+.bs {
+    background: lightgreen;
+    color: darkgrey;
+}
+
+.bs:hover {
+    background: #cfc;
+}
+</style>
+</head>
+<body>
+
+<h1>Go templates blank spaces trimming</h1>
+
+<pre>
+foo:
+    {{ if .foo }}
+        foo is true
+    {{ else }}
+        foo is false
+    {{ end }}
+bar: whatever
+</pre>
+
+<pre>
+foo:<span class="bs">\n
+    </span>{{ if .foo }}<span class="bs">\n
+        </span>foo is true<span class="bs">\n
+    </span>{{ else }}<span class="bs">\n
+        </span>foo is false<span class="bs">\n
+    </span>{{ end }}<span class="bs">\n
+</span>bar: whatever
+</pre>
+
+</body>
+</html>
