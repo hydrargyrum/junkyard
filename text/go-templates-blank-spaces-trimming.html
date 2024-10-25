@@ -7,18 +7,33 @@
 <title>XScreenSaver theming resources names</title>
 <style>
 .bs {
-    background: lightgreen;
-    color: darkgrey;
+	background: lightgreen;
+	color: darkgrey;
 }
 
 .bs:hover {
-    background: #cfc;
+	background: #cfc;
+}
+
+.bs-toggler {
+	display: none;
+	background: #fcc;
+}
+
+.bs-toggler:hover {
+	background: #fdd;
+}
+
+pre {
+	font-size: larger;
 }
 </style>
 </head>
 <body>
 
 <h1>Go templates blank spaces trimming</h1>
+
+<h4>Basic example</h4>
 
 <pre>
 foo:
@@ -30,15 +45,38 @@ foo:
 bar: whatever
 </pre>
 
+<h4>Colored blank spaces with interactive toggling</h4>
+
 <pre>
-foo:<span class="bs">\n
-    </span>{{ if .foo }}<span class="bs">\n
-        </span>foo is true<span class="bs">\n
-    </span>{{ else }}<span class="bs">\n
-        </span>foo is false<span class="bs">\n
-    </span>{{ end }}<span class="bs">\n
-</span>bar: whatever
+foo:<a class="bs" data-id="bs-1">\n
+    </a>{{<a class="bs-toggler" data-id="bs-1">-</a> if .foo <a class="bs-toggler" data-id="bs-2">-</a>}}<a class="bs" data-id="bs-2">\n
+        </a>foo is true<a class="bs" data-id="bs-3">\n
+    </a>{{<a class="bs-toggler" data-id="bs-3">-</a> else <a class="bs-toggler" data-id="bs-4">-</a>}}<a class="bs" data-id="bs-4">\n
+        </a>foo is false<a class="bs" data-id="bs-5">\n
+    </a>{{<a class="bs-toggler" data-id="bs-5">-</a> end <a class="bs-toggler" data-id="bs-6">-</a>}}<a class="bs" data-id="bs-6">\n
+</a>bar: whatever
 </pre>
+
+<script>
+for (let el of document.querySelectorAll(".bs")) {
+	el.addEventListener("click", function() {
+		for (let other of document.querySelectorAll(`.bs-toggler[data-id='${el.dataset.id}']`)) {
+			other.style.display = "inline";
+		}
+		el.style.display = "none";
+	});
+}
+
+for (let el of document.querySelectorAll(".bs-toggler")) {
+	el.addEventListener("click", function() {
+		for (let other of document.querySelectorAll(`.bs[data-id='${el.dataset.id}']`)) {
+			other.style.display = "inline";
+		}
+		el.style.display = "none";
+	});
+}
+
+</script>
 
 </body>
 </html>
