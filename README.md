@@ -30,6 +30,7 @@
 - [`greasemonkey/deliveroo`](javascript/greasemonkey/deliveroo): in [greasemonkey/violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/) js, various scripts to make deliveroo site a bit less painful
 - [`greasemonkey/round-prices.user.js`](javascript/greasemonkey/round-prices.user.js): in [greasemonkey/violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/) js, round numeric values on any web page, for example replace "9.99€" to "~10€"
 - [`greasemonkey/reddit-ignoreusers.user.js`](javascript/greasemonkey/reddit-ignoreusers.user.js): in [greasemonkey/violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/) js, hide topics created by some (configurable) users
+- [`greasemonkey/text-fragment-copier.user.js`](javascript/greasemonkey/text-fragment-copier.user.js): in [greasemonkey/violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/) js, copy a ["text fragment" URL](https://developer.mozilla.org/en-US/docs/Web/URI/Fragment/Text_fragments) based on current selected text
 
 ## Python
 - [`always_sorted_list.py`](python/sorted_list.py): a list data structure whose values are always sorted (if the values are immutable)
