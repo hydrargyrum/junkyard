@@ -54,6 +54,7 @@
 - [`read_lines_split_on_terminator.py`](python/read_lines_split_on_terminator.py): like `file.readlines()` but accepts an arbitrary delimiter
 - [`re-empty-none.py`](python/re-empty-none.py): the [`re`](https://docs.python.org/3/library/re.html) module can sometimes return matches with empty values or None
 - [`requests-get-server-ip-in-response.py`](python/requests-get-server-ip-in-response.py): for [requests](https://pypi.org/project/requests/) lib, how to get the server ip address in the Response object
+- [`sqlalchemy-query-execute-scalars.md`](python/sqlalchemy-query-execute-scalars.md): for [sqlalchemy](https://www.sqlalchemy.org/) lib, compare `execute` and `scalars` on legacy version 1 and current version 2
 - [`sqlalchemy-various-select.py`](python/sqlalchemy-various-select.py): for [sqlalchemy](https://www.sqlalchemy.org/) lib, show various ways to use `select()`
 - [`unpack-dict-params-to-pydantic.py`](python/unpack-dict-params-to-pydantic.py): for [pydantic](https://pypi.org/project/pydantic/) lib, decorator to convert json arguments to objects automatically
 - [`uuidv7-range.py`](python/uuidv7-range.py): range of [UUIDv7](https://www.ietf.org/archive/id/draft-peabody-dispatch-new-uuid-format-04.html#name-uuid-version-7) values between 2 timestamps, for example for partitioning
