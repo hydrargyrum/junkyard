@@ -11,6 +11,7 @@
 # 	autoimport --config-file ~/.autoimport.toml myfile.py
 
 from importlib import import_module
+import sys
 
 
 # not all PyQt modules may be installed
@@ -20,7 +21,7 @@ def try_import_add(module_name):
 	try:
 		module = import_module(module_name)
 	except ModuleNotFoundError:
-		pass
+		print(f"not found {module_name}", file=sys.stderr)
 	else:
 		modules.append(module)
 
@@ -31,11 +32,13 @@ try_import_add("PyQt5.QtGui")
 try_import_add("PyQt5.QtWidgets")
 try_import_add("PyQt5.Qsci")
 try_import_add("PyQt5.QtDBus")
+try_import_add("PyQt5.QtDesigner")
 try_import_add("PyQt5.QtHelp")
 try_import_add("PyQt5.QtLocation")
 try_import_add("PyQt5.QtMultimedia")
 try_import_add("PyQt5.QtMultimediaWidgets")
 try_import_add("PyQt5.QtNetwork")
+try_import_add("PyQt5.QtPrintSupport")
 try_import_add("PyQt5.QtSql")
 try_import_add("PyQt5.QtSvg")
 try_import_add("PyQt5.QtWebChannel")
