@@ -37,6 +37,7 @@
 - [`always_sorted_list.py`](python/sorted_list.py): a list data structure whose values are always sorted (if the values are immutable)
 - [`ansi_box.py`](python/ansi_box.py): toy library for drawing stuff with ansi sequences
 - [`autoimport-pyqt5.toml`](python/autoimport-pyqt5.toml): [autoimport](https://lyz-code.github.io/autoimport/) config for PyQt5 imports and its [generator script](python/autoimport-pyqt5-config-generator.py)
+- [`autoimport-pyqt6.toml`](python/autoimport-pyqt6.toml): [autoimport](https://lyz-code.github.io/autoimport/) config for PyQt6 imports and its [generator script](python/autoimport-pyqt6-config-generator.py)
 - [`better_sum.py`](python/better_sum.py): improving on python's `sum` builtin to accept non number types, like lists or timedeltas
 - [`cheap_sqlite_schema_migration.py`](python/cheap_sqlite_schema_migration.py): for python [sqlite](https://docs.python.org/3/library/sqlite3.html), cheap snippet of how to performed versioned database migrations (schema or not)
 - [`collections-abc-classes.md`](python/collections-abc-classes.md): [Mermaid](https://mermaid.js.org/) diagram showing `collections.abc` classes with abstract methods and mixins
