@@ -20,6 +20,7 @@
 - [`howto-do-shellextension-with-qt`](cpp/howto-do-shellextension-with-qt): an old tutorial on how to implement windows shell extension in qt, for example to overlay icons in `explorer.exe`
 
 ## Config
+- [`changedetection-samples.md`](text/changedetection-samples.md): [ChangeDetection](https://github.com/dgtlmoon/changedetection.io) samples
 - [`todotxt.nanorc`](dotfiles/todotxt.nanorc): [`nano`](https://www.nano-editor.org/) syntax coloring for [`todo.txt` format](http://todotxt.org/)
 
 ## gitlab-ci
