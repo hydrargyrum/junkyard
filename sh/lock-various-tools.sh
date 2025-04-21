@@ -16,4 +16,4 @@ xset dpms force off
 killall -HUP gpg-agent
 
 # music
-playerctl pause
+playerctl pause --all-players
