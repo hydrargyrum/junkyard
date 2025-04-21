@@ -21,6 +21,7 @@
 
 ## Config
 - [`changedetection-samples.md`](text/changedetection-samples.md): [ChangeDetection](https://github.com/dgtlmoon/changedetection.io) samples
+- [`sshd-default-config`](text/sshd-default-config): comparison of openssh-server default configs (alpine and debian)
 - [`todotxt.nanorc`](dotfiles/todotxt.nanorc): [`nano`](https://www.nano-editor.org/) syntax coloring for [`todo.txt` format](http://todotxt.org/)
 
 ## gitlab-ci

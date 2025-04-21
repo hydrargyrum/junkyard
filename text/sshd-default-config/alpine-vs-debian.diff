@@ -1,0 +1,102 @@
+--- sshd-default-alpine.conf	2025-04-21 14:42:29.403348701 +0200
++++ sshd-default-debian-sid.conf	2025-04-21 14:42:35.415457276 +0200
+@@ -1,11 +1,15 @@
++acceptenv COLORTERM
++acceptenv LANG
++acceptenv LC_*
++acceptenv NO_COLOR
+ addressfamily any
+ allowagentforwarding yes
+ allowstreamlocalforwarding yes
+-allowtcpforwarding no
++allowtcpforwarding yes
+ authenticationmethods any
+ authorizedkeyscommand none
+ authorizedkeyscommanduser none
+-authorizedkeysfile .ssh/authorized_keys
++authorizedkeysfile .ssh/authorized_keys .ssh/authorized_keys2
+ authorizedprincipalscommand none
+ authorizedprincipalscommanduser none
+ authorizedprincipalsfile none
+@@ -13,15 +17,22 @@
+ casignaturealgorithms ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,rsa-sha2-512,rsa-sha2-256
+ channeltimeout none
+ chrootdirectory none
+-ciphers chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com
++ciphers chacha20-poly1305@openssh.com,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr
+ clientalivecountmax 3
+ clientaliveinterval 0
+ compression yes
++debianbanner yes
+ disableforwarding no
+ exposeauthinfo no
+ fingerprinthash SHA256
+ forcecommand none
+ gatewayports no
++gssapiauthentication no
++gssapicleanupcredentials yes
++gssapikexalgorithms gss-group14-sha256-,gss-group16-sha512-,gss-nistp256-sha256-,gss-curve25519-sha256-,gss-group14-sha1-,gss-gex-sha1-
++gssapikeyexchange no
++gssapistorecredentialsonrekey no
++gssapistrictacceptorcheck yes
+ hostbasedacceptedalgorithms ssh-ed25519-cert-v01@openssh.com,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,sk-ssh-ed25519-cert-v01@openssh.com,sk-ecdsa-sha2-nistp256-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,rsa-sha2-512,rsa-sha2-256
+ hostbasedauthentication no
+ hostbasedusesnamefrompacketonly no
+@@ -32,9 +43,12 @@
+ hostkey /etc/ssh/ssh_host_rsa_key
+ ignorerhosts yes
+ ignoreuserknownhosts no
+-ipqos af21 cs1
+-kbdinteractiveauthentication yes
+-kexalgorithms sntrup761x25519-sha512,sntrup761x25519-sha512@openssh.com,mlkem768x25519-sha256,curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256
++ipqos lowdelay throughput
++kbdinteractiveauthentication no
++kerberosauthentication no
++kerberosorlocalpasswd yes
++kerberosticketcleanup yes
++kexalgorithms mlkem768x25519-sha256,sntrup761x25519-sha512,sntrup761x25519-sha512@openssh.com,curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521
+ listenaddress 0.0.0.0:22
+ listenaddress [::]:22
+ logingracetime 120
+@@ -44,6 +58,7 @@
+ maxsessions 10
+ maxstartups 10:30:100
+ modulifile /etc/ssh/moduli
++pamservicename sshd
+ passwordauthentication yes
+ permitemptypasswords no
+ permitlisten any
+@@ -59,7 +74,8 @@
+ persourcepenaltyexemptlist none
+ pidfile /run/sshd.pid
+ port 22
+-printmotd yes
++printlastlog yes
++printmotd no
+ pubkeyacceptedalgorithms ssh-ed25519-cert-v01@openssh.com,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,sk-ssh-ed25519-cert-v01@openssh.com,sk-ecdsa-sha2-nistp256-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,rsa-sha2-512,rsa-sha2-256
+ pubkeyauthentication yes
+ pubkeyauthoptions none
+@@ -68,18 +84,20 @@
+ requiredrsasize 1024
+ revokedkeys none
+ securitykeyprovider internal
+-sshdsessionpath /usr/lib/ssh/sshd-session
++sshdauthpath /usr/lib/openssh/sshd-auth
++sshdsessionpath /usr/lib/openssh/sshd-session
+ streamlocalbindmask 0177
+ streamlocalbindunlink no
+ strictmodes yes
+-subsystem sftp internal-sftp
++subsystem sftp /usr/lib/openssh/sftp-server
+ syslogfacility AUTH
+ tcpkeepalive yes
+ trustedusercakeys none
+ unusedconnectiontimeout none
+ usedns no
++usepam yes
+ versionaddendum none
+ x11displayoffset 10
+-x11forwarding no
++x11forwarding yes
+ x11uselocalhost yes
+ xauthlocation /usr/bin/xauth
