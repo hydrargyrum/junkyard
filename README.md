@@ -72,6 +72,7 @@
 - [`grep-exit-codes.md`](sh/grep-exit-codes.md): what exit code will grep use?
 - [`guru-meditation.sh`](sh/guru-meditation.sh): generate colored ANSI ["guru meditation"](https://en.wikipedia.org/wiki/Guru_Meditation) banner using POSIX sh and `tput`
 - [`interactive-topydo-with-fzf.sh`](sh/interactive-topydo-with-fzf.sh): create an interactive UI for [topydo](https://github.com/topydo/topydo) with [fzf](https://github.com/junegunn/fzf)
+- [`pipefail-emulation.sh`](sh/pipefail-emulation.sh): emulate `set -o pipefail` in pure-POSIX shell
 - [`rdfind-resultstxt-coloring.sh`](sh/rdfind-resultstxt-coloring.sh): view [rdfind](https://rdfind.pauldreik.se/)'s results.txt, demonstrating coloring without hardcoded sequences, hyperlinks
 - [`refresh-topydo-auto-with-entr.sh`](sh/refresh-topydo-auto-with-entr.sh): refresh automatically [topydo](https://github.com/topydo/topydo) (todo.txt) display using entr
 - [`reminder-fzf-placeholders.md`](sh/reminder-fzf-placeholders.md): reminder on [fzf](https://github.com/junegunn/fzf) `{placeholders}`
