@@ -65,6 +65,7 @@
 
 ## `sh`
 - [`add-containers-in-hosts-file.sh`](sh/add-containers-in-hosts-file.sh): add docker container addresses in `/etc/hosts`, with the container names
++ [`chattr-reminder-mnemonics.md`](sh/chattr-reminder-mnemonics.md): chattr(1) reminder mnemonics
 - [`date-in-email-header-format-rfc2822.sh`](sh/date-in-email-header-format-rfc2822.sh): print date in rfc2822 format (suitable for email headers), also useful for any strftime implementation
 - [`example-chezmoi-conf-in-docker.sh`](sh/example-chezmoi-conf-in-docker.sh): how to export your [chezmoi](https://www.chezmoi.io/) dotfiles and import them easily in a docker container
 - [`examples-of-how-cool-is-sponge.sh`](sh/examples-of-how-cool-is-sponge.sh): examples of how cool is sponge(1)
