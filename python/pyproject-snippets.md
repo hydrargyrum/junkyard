@@ -42,3 +42,22 @@ requires = [
 ]
 build-backend = 'setuptools.build_meta'
 ```
+
+## Entrypoints/plugins
+
+- a module registers `externalinterface.subname` interfaces and will accept implementations plugins
+- we package an implementation
+    - its key for the external interface will be `custom_name`
+    - the symbol to expose as a plugin can be obtained with `from implpackage.mymodule import Exposed`
+
+```
+[project.entry-points."externalinterface.subname"]
+custom_name = "implpackage.mymodule:ExposedSymbol"
+```
+
+### Example for fsspec
+
+```
+[project.entry-points."fsspec.specs"]
+my_fs = "mypackage:MyFS"
+```
