@@ -9,6 +9,7 @@
 - [`commands-with-sub-manual-pages.yml`](commands-with-sub-manual-pages.yml): commands which have dedicated sub manual pages for subcommands
 - [`exif-orientations`](graphics/exif-orientations/README.md): visual reminder about EXIF orientation
 - [`go-templates-blank-spaces-trimming.html`](text/go-templates-blank-spaces-trimming.html): visual reminder about go templates' blank spaces trimming
+- [`list-keybindings.md`](text/list-keybindings.md): list key bindings in various apps (bash, mpv, tig, vd, zsh)
 - [`reminder-ssh-controlmaster-option.md`](text/reminder-ssh-controlmaster-option.md): reminder for ssh's [ControlMaster](https://manpages.debian.org/stable/openssh-client/ssh_config.5.en.html#ControlMaster)
 - [`xdg-variables-cheatsheet.md`](text/xdg-variables-cheatsheet.md): [`XDG_*`](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html) variables cheatsheet
 - [`xscreensaver-theme-colors/`](text/xscreensaver-theme-colors/): cheatsheet of theme configuration resources for [xscreensaver](https://www.jwz.org/xscreensaver/)
