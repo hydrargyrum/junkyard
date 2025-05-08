@@ -12,7 +12,7 @@ Another way to see it: does `grep` print any lines (without `-q`)?
 - if it prints anything, grep returns 0
 - if it prints nothing, grep returns 1
 
-Corollary: when grep is used on an empty file, with or without `-v`, it always returns 1.
+Corollary: when `grep` receives an empty file, with or without `-v`, it always returns 1.
 
 ## Test it yourself
 
@@ -21,7 +21,7 @@ Input files:
 ```sh
 echo foo > foo.txt
 echo bar > bar.txt
-echo foo > foo-bar.txt ; echo bar >> foo-bar.txt
+cat foo.txt bar.txt > foo-bar.txt
 true > empty.txt
 ```
 

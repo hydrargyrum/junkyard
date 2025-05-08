@@ -20,7 +20,7 @@ Or run `TIG_SCRIPT=<(echo :view-help) tig`
 
 ## visidata
 
-Press `z` then `ctrl+h` to open a sheet with commands and their bindings.
+Type `gz` then press `ctrl+h` to open a sheet with commands and their bindings.
 
 ## zsh
 

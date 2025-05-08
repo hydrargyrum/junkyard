@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        datadoghq.eu/logs - add query in title
 // @namespace   Violentmonkey Scripts
-// @match       https://lumapps.datadoghq.eu/logs*
+// @match       https://yourname.datadoghq.eu/logs*
 // @grant       none
 // @version     1.0
 // @author      -
