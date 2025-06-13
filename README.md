@@ -31,7 +31,9 @@
 
 ## Javascript
 - [`break-url-bar.html`](javascript/break-url-bar.html): somehow break URL bar display
+- [`greasemonkey/datadog-query-in-page-title.user.js`](javascript/greasemonkey/datadog-query-in-page-title.user.js): in [greasemonkey/violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/) js, display a meaningful title for datadog views
 - [`greasemonkey/deliveroo`](javascript/greasemonkey/deliveroo): in [greasemonkey/violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/) js, various scripts to make deliveroo site a bit less painful
+- [`greasemonkey/github-ci.userscript.js`](javascript/greasemonkey/github-ci.userscript.js): in [greasemonkey/violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/) js, notify when CI of a github PR succeeded or failed
 - [`greasemonkey/round-prices.user.js`](javascript/greasemonkey/round-prices.user.js): in [greasemonkey/violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/) js, round numeric values on any web page, for example replace "9.99€" to "~10€"
 - [`greasemonkey/reddit-ignoreusers.user.js`](javascript/greasemonkey/reddit-ignoreusers.user.js): in [greasemonkey/violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/) js, hide topics created by some (configurable) users
 - [`greasemonkey/text-fragment-copier.user.js`](javascript/greasemonkey/text-fragment-copier.user.js): in [greasemonkey/violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/) js, copy a ["text fragment" URL](https://developer.mozilla.org/en-US/docs/Web/URI/Fragment/Text_fragments) based on current selected text
