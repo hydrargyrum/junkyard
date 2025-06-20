@@ -87,6 +87,7 @@
 - [`xclip-or-xsel.sh`](sh/xclip-or-xsel.sh): mini-cheatsheet to [`xclip`](https://github.com/astrand/xclip) and [`xsel`](https://github.com/kfish/xsel) (manipulate X11 clipboard from command-line)
 
 ## `zsh`
+- [`compsys-optspec.md`](zsh/compsys-optspec.md): reminder about zshcompsys's `_arguments`
 - [`find-termcap-name.zsh`](zsh/find-termcap-name.zsh): take a key as input, then print the corresponding termcap name
 - [`options-status.zsh`](zsh/options-status.zsh): show current status of all options (think setopt/unsetopt)
 - [`print-all-termcaps.zsh`](zsh/print-all-termcaps.zsh): print all termcap names and values (in hex, with `xxd(1)`, for readability)
